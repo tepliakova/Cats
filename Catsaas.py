@@ -15,14 +15,13 @@ def load_image(url):
         print(f"Произошла ошибка: {e}")
         return None
 
-def set-image():
+
+def set_image():
     img = load_image(url)
 
     if img:
         label.config(image=img)
         label.image = img
-
-
 
 window = Tk()
 window.title("Cats")
@@ -36,5 +35,6 @@ update_button.pack()
 
 url = "https://cataas.com/cat"
 
+set_image()
 
 window.mainloop()
